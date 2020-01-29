@@ -1,2 +1,2 @@
 #!/bin/bash
-conda create -n test-env python=3.6
+conda env create --file "$1"
