@@ -1,7 +1,7 @@
 name: 'Sphinx Semantic gh-Pages Action'
 description: 'An action to push multi-version sphinx documentation to github pages'
 author: 'Umesh Timalsina'
-inputs: 
+inputs:
   envFile:
     description: 'Environment File For Building this documentation'
     required: true
