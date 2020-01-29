@@ -1,12 +1,12 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
+name: 'Sphinx Semantic gh-Pages Action'
+description: 'An action to push multi-version sphinx documentation to github pages'
+author: 'Umesh Timalsina'
 inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  envFile:
+    description: 'Environment File For Building this documentation'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.myInput }}
+    - ${{ inputs.envFile }}
