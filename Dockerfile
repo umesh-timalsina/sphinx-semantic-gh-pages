@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM continuumio/miniconda3:4.7.12-alpine
 
 COPY LICENSE README.md /
 

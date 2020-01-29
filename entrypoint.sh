@@ -1,3 +1,3 @@
-#!/bin/sh -l
+#!/bin/bash
 
-echo "hello $1"
+conda env create test-env
