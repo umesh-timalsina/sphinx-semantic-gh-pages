@@ -5,8 +5,20 @@ inputs:
   envFile:
     description: 'Environment File For Building this documentation'
     required: true
+  envName:
+    description: 'Environment Name For Building this documentation'
+    required: true
+  docsDir:
+    description: 'Where are the docs located'
+    required: true
+  outputDir:
+    description: 'Where to put the build files'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.envFile }}
+    - ${{ inputs.envName }}
+    - ${{ inputs.docsDir }}
+    - ${{ inputs.outputDir }}
